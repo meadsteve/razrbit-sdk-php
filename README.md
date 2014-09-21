@@ -9,7 +9,7 @@ PHP |
 
 **[LUXSTACK](https://luxstack.com) Bitcoin Platform and SDKs — build, test and scale bitcoin apps faster. Plug in our powerful SDKs to supercharge your bitcoin toolbox.**
 
-# LUXSTACK SDK for PHP (Beta)
+# Razrbit SDK for PHP (Beta)
 
 ## Installation
 
