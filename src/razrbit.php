@@ -19,12 +19,12 @@ class Razrbit
   /**
    * Version of this API code.
    */
-  const VERSION = '0.1';
+  const VERSION = '0.1.1';
 
   /**
    * curl requests are sent to this URL.
    */
-  const ENDPOINT = 'https://api.razrbit.com';
+  const ENDPOINT = 'https://api.luxstack.com';
 
   /**
    * Version of API to which we send requests.
@@ -35,7 +35,7 @@ class Razrbit
   /**
    * 
    * If TRUE, test addresses can be used to test the API without sending bitcoins.
-   * See https://razrbit.com/dashboard for examples of test addresses.
+   * See https://luxstack.com/dashboard for examples of test addresses.
    * 
    * If set to false, the test addresses will fail validation.
    * 
@@ -50,7 +50,7 @@ class Razrbit
     CURLOPT_CONNECTTIMEOUT => 10,
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_TIMEOUT        => 60,
-    CURLOPT_USERAGENT      => 'razrbit-php-0.1',
+    CURLOPT_USERAGENT      => 'razrbit-php-0.1.1'
   );
 
   /**
@@ -500,7 +500,6 @@ class Razrbit
   /**
    * 
    * Validation functions all accept one String parameter and return Boolean.
-   * Some of the regex patterns may be wrong.
    * 
    * When testing, consider setting ALLOW_TEST_ADDRESSES = TRUE at the top of this class
    * 
