@@ -5,9 +5,10 @@ ini_set('display_errors', '1');
 CONST MY_APP_ID = "";           // fill in your Razrbit Application ID
 CONST MY_APP_SECRET = "";       // fill in your Razrbit Application Secret
 
-require_once '../src/razrbit.php';
+// Assuming you've used composer you can use the autoloader provided:
+require_once __DIR__ . '/../vendor/autoload.php';
 
-$razrbit = new Razrbit(MY_APP_ID,MY_APP_SECRET);
+$razrbit = new \Luxstack\Razrbit\Razrbit(MY_APP_ID,MY_APP_SECRET);
 print_r($razrbit->walletCreateNewAddress());
 
 if($razrbit->walletSendAmount("5exampleFromAddressPrivateKey", "1exampleToAddress", 123456)) {

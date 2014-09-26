@@ -1,0 +1,16 @@
+{
+    "name": "luxstack/razrbit",
+    "minimum-stability": "stable",
+    "license": "MIT",
+
+    "require": {
+        "php": ">=5.3",
+        "ext-curl": "*"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Luxstack\\Razrbit\\": "src/"
+        }
+    }
+}

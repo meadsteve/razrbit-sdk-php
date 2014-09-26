@@ -13,20 +13,34 @@ PHP |
 
 ## Installation
 
+### Via composer
+
+Add the following to your composer.json:
+
+```js
+  "require": {
+        "luxstack/razrbit": "dev-master"
+    }
+```
+
+Then run ```composer update```
+
+### By manually cloning the repo
+
 In the library section of your project, clone the API:
 
 ```
 git clone https://github.com/LUXSTACK/razrbit-sdk-php.git
 ```
 
-## Usage - REST API Calls
-
-
-Be sure to import the razrbit.php file where needed:
+And then be sure to import the razrbit.php file where needed:
 
 ```
 require_once 'razrbit-sdk-php/src/razrbit.php';
 ```
+
+## Usage - REST API Calls
+
 
 Prior to making any REST API calls, invoke the init method passing in your AppId and AppSecret which will be used for all subsequent invocations:
 
