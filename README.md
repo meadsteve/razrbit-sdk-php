@@ -11,6 +11,14 @@ PHP |
 
 # Razrbit SDK for PHP (Beta)
 
+## Requirements
+
+PHP >= 5.3
+
+[PHP Curl Extension](http://php.net/curl)
+
+[PHP JSON Extension](http://php.net/json)
+
 ## Installation
 
 ### Via composer
